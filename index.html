@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube Clone</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            background-color: white;
+            border-bottom: 1px solid #e5e5e5;
+        }
+        .logo {
+            display: flex;
+            align-items: center;
+        }
+        .search-bar {
+            flex-grow: 1;
+            margin: 0 20px;
+        }
+        .search-bar input {
+            width: 100%;
+            max-width: 600px;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 20px;
+        }
+        .user-actions {
+            display: flex;
+            gap: 20px;
+        }
+        .main-content {
+            display: flex;
+        }
+        .sidebar {
+            width: 200px;
+            padding: 20px;
+            background-color: #f9f9f9;
+        }
+        .sidebar ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .sidebar li {
+            margin-bottom: 10px;
+        }
+        .video-grid {
+            flex-grow: 1;
+            padding: 20px;
+        }
+        .video-tabs {
+            margin-bottom: 20px;
+        }
+        .video-tabs button {
+            margin-right: 10px;
+            padding: 5px 10px;
+            border: none;
+            background-color: #f2f2f2;
+            border-radius: 15px;
+            cursor: pointer;
+        }
+        .video-tabs button.active {
+            background-color: #030303;
+            color: white;
+        }
+        .videos {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 20px;
+        }
+        .video-item img {
+            width: 100%;
+            border-radius: 10px;
+        }
+        .video-info {
+            margin-top: 10px;
+        }
+        .video-title {
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        .video-channel, .video-views {
+            font-size: 0.9em;
+            color: #606060;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <img src="/placeholder.svg?height=40&width=40" alt="YouTube Logo" width="40" height="40">
+            <h1>YouTube</h1>
+        </div>
+        <div class="search-bar">
+            <input type="text" placeholder="Search">
+        </div>
+        <div class="user-actions">
+            <img src="/placeholder.svg?height=24&width=24" alt="Create" width="24" height="24">
+            <img src="/placeholder.svg?height=24&width=24" alt="Notifications" width="24" height="24">
+            <img src="/placeholder.svg?height=32&width=32" alt="User" width="32" height="32" style="border-radius: 50%;">
+        </div>
+    </header>
+
+    <div class="main-content">
+        <nav class="sidebar">
+            <ul>
+                <li>Home</li>
+                <li>Shorts</li>
+                <li>Subscriptions</li>
+                <li>Library</li>
+                <li>History</li>
+                <li>Your videos</li>
+                <li>Watch later</li>
+                <li>Liked videos</li>
+            </ul>
+        </nav>
+
+        <main class="video-grid">
+            <div class="video-tabs">
+                <button class="active">All</button>
+                <button>Music</button>
+                <button>Gaming</button>
+                <button>Movies</button>
+                <button>News</button>
+                <button>Live</button>
+            </div>
+
+            <div class="videos">
+                <div class="video-item">
+                    <img src="/placeholder.svg?height=200&width=300" alt="Video Thumbnail">
+                    <div class="video-info">
+                        <div class="video-title">FREE OFFICIAL GX BROWSER MOD</div>
+                        <div class="video-channel">Opera GX</div>
+                        <div class="video-views">Sponsored</div>
+                    </div>
+                </div>
+                <div class="video-item">
+                    <img src="/placeholder.svg?height=200&width=300" alt="Video Thumbnail">
+                    <div class="video-info">
+                        <div class="video-title">Lady Gaga, Bruno Mars - Die With A Smile</div>
+                        <div class="video-channel">sweetblue</div>
+                        <div class="video-views">17M views • 2 months ago</div>
+                    </div>
+                </div>
+                <div class="video-item">
+                    <img src="/placeholder.svg?height=200&width=300" alt="Video Thumbnail">
+                    <div class="video-info">
+                        <div class="video-title">Neymar Jr 2012 Ballon D'Or Level Skills, Goals, Showboating, Dribbling</div>
+                        <div class="video-channel">MNcompsJR3</div>
+                        <div class="video-views">1.7M views • 3 months ago</div>
+                    </div>
+                </div>
+                <div class="video-item">
+                    <img src="/placeholder.svg?height=200&width=300" alt="Video Thumbnail">
+                    <div class="video-info">
+                        <div class="video-title">Tu Boda - Coldplay Cover</div>
+                        <div class="video-channel">ColdplayVEVO</div>
+                        <div class="video-views">5.2M views • 1 week ago</div>
+                    </div>
+                </div>
+                <div class="video-item">
+                    <img src="/placeholder.svg?height=200&width=300" alt="Video Thumbnail">
+                    <div class="video-info">
+                        <div class="video-title">Terrifier 2 - Official Trailer</div>
+                        <div class="video-channel">HorrorCentral</div>
+                        <div class="video-views">3.8M views • 2 weeks ago</div>
+                    </div>
+                </div>
+                <div class="video-item">
+                    <img src="/placeholder.svg?height=200&width=300" alt="Video Thumbnail">
+                    <div class="video-info">
+                        <div class="video-title">Learn React in 30 Minutes</div>
+                        <div class="video-channel">CodeWithMosh</div>
+                        <div class="video-views">1.2M views • 3 months ago</div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+</html>
